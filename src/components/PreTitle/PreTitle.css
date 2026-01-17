@@ -1,0 +1,41 @@
+.pre_title {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.5rem;
+}
+
+.police_colors {
+  display: flex;
+  align-items: center;
+  height: 1.25rem;
+  width: 3rem;
+}
+
+.police_blue,
+.police_light_blue,
+.police_red,
+.police_yellow {
+  height: 100%;
+  flex: 1;
+}
+
+.police_blue {
+  background-color: var(--blue_color);
+}
+
+.police_light_blue {
+  background-color: var(--light_blue_color);
+}
+
+.police_red {
+  background-color: var(--red_color);
+}
+
+.police_yellow {
+  background-color: var(--yellow_color);
+}
+
+.pre_title_text {
+  font-size: 1.10rem;
+}
+

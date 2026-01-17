@@ -1,0 +1,128 @@
+.home_hero_section {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+}
+
+.home_hero_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.home_hero_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home_hero_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.6) 10%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  z-index: -1;
+}
+
+.home_hero_content {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: var(--bg_color);
+  z-index: 1;
+}
+
+/* Left Content */
+.hero_text_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero_title {
+  font-size: var(--home_hero_fs);
+  font-weight: var(--bold_fw);
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.hero_subtitle {
+  font-size: 1.5rem;
+  font-weight: var(--medium_fw);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* Right Content */
+.hero_text_right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 4.5rem;
+  max-width: 80%;
+  align-items: flex-end;
+  justify-self: end;
+  text-align: right;
+}
+
+.hero_news_title {
+  font-size: 1.25rem;
+  font-weight: var(--bold_fw);
+  line-height: 1.3;
+}
+
+.hero_news_desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.hero_news_footer {
+  font-size: 0.85rem;
+  font-weight: var(--bold_fw);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .home_hero_content {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .hero_text_left {
+    max-width: 100%;
+  }
+
+  .hero_text_right {
+    max-width: 100%;
+    padding-left: 0;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+  }
+
+  .hero_center_text {
+    display: none; /* Hide decorative text on mobile to save space */
+  }
+}

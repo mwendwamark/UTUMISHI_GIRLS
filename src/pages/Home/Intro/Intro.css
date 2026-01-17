@@ -1,0 +1,9 @@
+.intro_section {
+  width: 100%;
+}
+
+.intro_content h2 {
+  font-size: var(--sub_section_title_fs);
+  font-weight: var(--semi_bold_fw);
+  font-family: var(--sec_ff);
+}
