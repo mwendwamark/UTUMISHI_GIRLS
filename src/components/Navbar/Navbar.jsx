@@ -90,7 +90,8 @@ const Navbar = () => {
         {/* Right Side Icons */}
         <div className="navbar_icons">
           <a href="tel:+254700000000" className="icon_link">
-<MdLocalPhone />          </a>
+            <MdLocalPhone />{" "}
+          </a>
           <a href="mailto:info@utumishigirls.ac.ke" className="icon_link">
             <MdEmail />
           </a>

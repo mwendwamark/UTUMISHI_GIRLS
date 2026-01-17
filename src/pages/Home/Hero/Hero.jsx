@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import homeHero from "../../../assets/home/HomeHero.webp";
 import { FaArrowRight } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,24 +13,31 @@ const Hero = () => {
       <div className="home_hero_overlay"></div>
 
       <div className="home_hero_content container">
-        <div className="hero_text_left">
+        <div className="hero_title_contents">
           <h1 className="hero_title">
             UTUMISHI GIRLS <br /> ACADEMY
           </h1>
-          <p className="hero_subtitle">Motto: Greatness In Humility</p>
+          <p className="hero_subtitle"> Greatness In Humility</p>
+          <div className="home_hero_buttons">
+            <button className="btn btn_outline_white">Explore More</button>
+            <NavLink to="/" className="btn hero_btn_kcse">
+              KCSE 2025
+              <FaArrowRight />
+            </NavLink>
+          </div>
         </div>
 
-       
-        <div className="hero_text_right">
-          <h3 className="hero_news_title">
-            Congratulations to the Class of 2025 on their KCSE Results
-          </h3>
-          <p className="hero_news_desc">
-            Our School Community is extremely proud of all the Grammarians who
-            just completed their VCE. With a median ATAR of 94.3, MGGS is ranked
-            as the number 1 independent school in Victoria.
-          </p>
-          <a className="hero_news_footer">KCSE results 2025  <FaArrowRight/></a>
+        {/* Scroll Down Indicator */}
+        <div className="scroll_indicator">
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
+          <div className="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p className="scroll_text">SCROLL</p>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
 :root {
   --bg_color: #fff;
   --white_alt_color: #fafaf9;
@@ -10,10 +10,10 @@
   --yellow_color: #e7f914;
   --red_color: #fa0108;
 
-  font-family: "Outfit", sans-serif;
-  --sec_ff: "Bricolage Grotesque", sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
+  --sec_ff: "Google Sans Flex", sans-serif;
 
-  --home_hero_fs: clamp(3rem, 5vw + 1rem, 6rem);
+  --home_hero_fs: clamp(4rem, 5vw + 1rem, 6rem);
   --hero_fs: clamp(2.5rem, 4vw + 1rem, 5rem);
   --section_title_fs: clamp(2rem, 3vw + 1rem, 4rem);
   --sub_section_title_fs: clamp(1.5rem, 2vw + 1rem, 2.5rem);
@@ -70,9 +70,16 @@ button {
   width: 100%;
 }
 
+.small_container {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .section {
-  padding: 15rem 0;
-  /* border-top: 1px solid var(--light_grey_color); */
+  padding: 10rem 0;
+  border-top: 1px solid var(--light_grey_color);
 }
 
 .below_navbar {
@@ -95,6 +102,7 @@ button {
 .two_col_uneven_header {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr;
+  gap: 2rem;
 }
 
 .section_headers {
@@ -119,12 +127,78 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-.two_col_uneven_header{
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  .two_col_uneven_header,
+  .two_col_even_header {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
 }
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: var(--normal_fw);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: capitalize;
+  white-space: nowrap;
 }
 
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
+/* White Solid Button */
+.btn_white {
+  background-color: var(--bg_color);
+  color: var(--black_color);
+  border: 1px solid var(--bg_color);
+}
 
+.btn_white:hover {
+  background-color: var(--white_alt_color);
+}
 
+/* Black Solid Button */
+.btn_black {
+  background-color: var(--black_color);
+  color: var(--bg_color);
+  border: 1px solid var(--black_color);
+}
+
+.btn_black:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* White Outline Button */
+.btn_outline_white {
+  background-color: transparent;
+  color: var(--bg_color);
+  border: 1px solid var(--bg_color);
+}
+
+.btn_outline_white:hover {
+  background-color: var(--bg_color);
+  color: var(--black_color);
+}
+
+/* Black Outline Button */
+.btn_outline_black {
+  background-color: transparent;
+  color: var(--black_color);
+  border: 1px solid var(--black_color);
+}
+
+.btn_outline_black:hover {
+  background-color: var(--black_color);
+  color: var(--bg_color);
+}

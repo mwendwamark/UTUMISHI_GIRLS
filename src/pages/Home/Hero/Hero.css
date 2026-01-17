@@ -21,9 +21,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(50%);
 }
 
-.home_hero_overlay {
+/* .home_hero_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,13 +32,13 @@
   height: 100%;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.6) 10%,
-    rgba(0, 0, 0, 0.3) 50%,
-    rgba(0, 0, 0, 0.1) 100%
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.2) 100%
   );
   z-index: -1;
-}
+} */
 
 .home_hero_content {
   position: relative;
@@ -48,6 +49,7 @@
   align-items: flex-end;
   color: var(--bg_color);
   z-index: 1;
+  padding-bottom: 5rem;
 }
 
 /* Left Content */
@@ -62,15 +64,23 @@
   font-weight: var(--bold_fw);
   line-height: 1;
   text-transform: uppercase;
-  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .hero_subtitle {
   font-size: 1.5rem;
   font-weight: var(--medium_fw);
-  font-family: "Bricolage Grotesque", sans-serif;
 }
 
+.home_hero_buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero_btn_kcse {
+  color: var(--bg_color);
+}
 /* Right Content */
 .hero_text_right {
   display: flex;
@@ -101,9 +111,65 @@
   text-transform: uppercase;
   margin-top: 0.5rem;
 }
+/* Scroll Indicator */
+.scroll_indicator {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--bg_color);
+  border-radius: 20px;
+  position: relative;
+}
+
+.wheel {
+  width: 4px;
+  height: 8px;
+  background-color: var(--bg_color);
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.5s infinite;
+}
+
+.scroll_text {
+  font-size: 0.75rem;
+  color: var(--bg_color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: var(--medium_fw);
+  opacity: 0.7;
+}
+
+@keyframes scroll {
+  0% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
 
 /* Responsive */
 @media screen and (max-width: 1024px) {
+  .home_hero_section {
+    padding-bottom: 2rem;
+  }
   .home_hero_content {
     grid-template-columns: 1fr;
     align-items: flex-start;
@@ -124,5 +190,9 @@
 
   .hero_center_text {
     display: none; /* Hide decorative text on mobile to save space */
+  }
+
+  .scroll_indicator {
+    bottom: -2rem;
   }
 }

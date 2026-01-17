@@ -57,7 +57,7 @@
 
 .nav_link {
   font-size: 1rem;
-  font-weight: var(--medium_fw);
+  font-weight: var(--normal_fw);
   color: var(--bg_color);
   text-transform: capitalize;
   position: relative;
@@ -179,10 +179,9 @@
 }
 
 .mobile_nav_link {
-  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1rem;
-  font-weight: var(--semi_bold_fw);
-  color: var(--bg_color);
+  font-weight: var(--normal_fw);
+  color: var(--black_color);
   text-transform: capitalize;
   border-bottom: 1px solid var(--light_grey_color);
   padding-bottom: 0.5rem;
