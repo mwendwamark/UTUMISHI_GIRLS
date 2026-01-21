@@ -20,6 +20,8 @@ const Principals = () => {
               src={schoolImg}
               alt="Utumishi Girls Academy"
               className="principal_img"
+              width="800"
+              height="533"
             />
           </div>
 
@@ -44,8 +46,10 @@ const Principals = () => {
                 src={principalImg}
                 alt="Dr. Pauline Njoroge"
                 className="principal_avatar"
+                width="60"
+                height="60"
               />
-              <h4>Dr. Pauline Njoroge - Principal Utumishi Girls</h4>
+              <h3>Dr. Pauline Njoroge - Principal Utumishi Girls</h3>
             </div>
 
             <div className="quote_icon_bottom">

@@ -75,7 +75,12 @@ const Navbar = () => {
       <div className="navbar_container container">
         {/* Logo Left */}
         <div className="navbar_logo">
-          <img src={logo} alt="Utumishi Girls Academy" />
+          <img
+            src={logo}
+            alt="Utumishi Girls Academy"
+            width="100"
+            height="100"
+          />
         </div>
 
         {/* Desktop: Links Center */}
@@ -89,13 +94,25 @@ const Navbar = () => {
 
         {/* Right Side Icons */}
         <div className="navbar_icons">
-          <a href="tel:+254700000000" className="icon_link">
+          <a
+            href="tel:+254700000000"
+            className="icon_link"
+            aria-label="Call us"
+          >
             <MdLocalPhone />{" "}
           </a>
-          <a href="mailto:info@utumishigirls.ac.ke" className="icon_link">
+          <a
+            href="mailto:info@utumishigirls.ac.ke"
+            className="icon_link"
+            aria-label="Email us"
+          >
             <MdEmail />
           </a>
-          <button className="menu_icon mobile_only" onClick={toggleMenu}>
+          <button
+            className="menu_icon mobile_only"
+            onClick={toggleMenu}
+            aria-label="Open menu"
+          >
             <IoMenu />
           </button>
         </div>
@@ -110,7 +127,11 @@ const Navbar = () => {
           className={`mobile_menu_content ${menuOpen ? "open" : ""}`}
           onClick={(e) => e.stopPropagation()}
         >
-          <button className="close_menu_icon" onClick={closeMenu}>
+          <button
+            className="close_menu_icon"
+            onClick={closeMenu}
+            aria-label="Close menu"
+          >
             <IoClose />
           </button>
           <nav className="mobile_nav_links">

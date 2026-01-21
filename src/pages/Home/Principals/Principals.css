@@ -82,7 +82,7 @@
   border: 2px solid var(--primary_color); /* Optional: adds a nice border */
 }
 
-.principal_details h4 {
+.principal_details h3 {
   font-size: 1.1rem;
   font-weight: var(--bold_fw);
   color: var(--black_color);
