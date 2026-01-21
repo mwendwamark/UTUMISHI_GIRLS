@@ -15,7 +15,7 @@
 
   --home_hero_fs: clamp(4rem, 5vw + 1rem, 6rem);
   --hero_fs: clamp(2.5rem, 4vw + 1rem, 5rem);
-  --section_title_fs: clamp(2rem, 3vw + 1rem, 4rem);
+  --section_title_fs: clamp(2rem, 3vw + 1rem, 3rem);
   --sub_section_title_fs: clamp(1.5rem, 2vw + 1rem, 2.5rem);
   --nav_fs: clamp(1rem, 0.5vw + 0.8rem, 1.125rem);
   --text_fs: clamp(1rem, 0.5vw + 0.8rem, 1.125rem);
@@ -96,7 +96,7 @@ button {
 .two_col_even_header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .two_col_uneven_header {
