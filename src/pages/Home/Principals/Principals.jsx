@@ -2,7 +2,7 @@ import React from "react";
 import "./Principals.css";
 import PreTitle from "../../../components/PreTitle/PreTitle";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import principalImg from "../../../assets/home/principal.webp";
+import principalImg from "../../../assets/home/principal_avatar.webp";
 import schoolImg from "../../../assets/home/HomeHero.webp";
 
 const Principals = () => {
