@@ -5,6 +5,7 @@ import Intro from "./Intro/Intro";
 import Mission from "./Mission/Mission";
 import Principals from "./Principals/Principals";
 import About from "./About/About";
+import MeetFuture from "./MeetFuture/MeetFuture";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Mission />
       <Principals />
       <About />
+      <MeetFuture/>
     </div>
   );
 };

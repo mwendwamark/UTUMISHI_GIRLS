@@ -1,0 +1,18 @@
+.meet_future_container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .meet_future_video {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .meet_future_video {
+    height: 400px;
+  }
+}
+

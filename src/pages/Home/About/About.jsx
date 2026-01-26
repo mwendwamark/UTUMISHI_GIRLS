@@ -15,7 +15,7 @@ const About = () => {
     <section className="home_about_section section">
       <div className="home_about_container container">
         <div className="home_about_top_headers two_col_even_header">
-          <div className="home_about_headers">
+          <div className="home_about_headers section_headers">
             <PreTitle preTitle={"About Utumishi Girls Academy"} />
             <h2 className="home_about_heading">
               The best place for the girl child to be
@@ -23,7 +23,7 @@ const About = () => {
           </div>
 
           <div className="home_about_top_content">
-            <p>
+            <p className="header_desc">
               Our curriculum focuses on academic excellence, spiritual growth,
               and co-curricular activities to ensure every student reaches her
               full potential.

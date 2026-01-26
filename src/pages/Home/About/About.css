@@ -4,7 +4,7 @@
 .home_about_heading {
   font-size: var(--section_title_fs);
   font-weight: var(--medium_fw);
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   text-transform: capitalize;
   max-width: 600px;
 }
